@@ -11,3 +11,8 @@
 在互联网时代，我们所开发的应用大多是直面用户的，程序中的任何一点小疏忽都可能导致用户的流失，而程序出现异常往往又是不可避免的，所以我们需要对异常进行捕获，然后给予相应的处理，来减少程序异常对用户体验的影响
 6、添加Swagger2来在线自动生成接口的文档+测试功能
 Swagger是一款通过我们添加的注解来对方法进行说明，来自动生成项目的在线api接口文档的web服务。
+7、添加PageHelper分页查询功能，PageHelper是一款好用的开源免费的Mybatis第三方物理分页插件
+物理分页支持常见的 12 种数据库。Oracle,MySql,MariaDB,SQLite,DB2,PostgreSQL,SqlServer 等
+支持多种分页方式支持常见的RowBounds(PageRowBounds)，PageHelper.startPage 方法调用，Mapper 接口参数调用
+需要添加jar包依赖
+可是这种分页有问题，先是查出所有的数据，然后再分页，这样根本无法优化效率。
