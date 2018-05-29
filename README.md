@@ -16,3 +16,6 @@ Swagger是一款通过我们添加的注解来对方法进行说明，来自动�
 支持多种分页方式支持常见的RowBounds(PageRowBounds)，PageHelper.startPage 方法调用，Mapper 接口参数调用
 需要添加jar包依赖
 可是这种分页有问题，先是查出所有的数据，然后再分页，这样根本无法优化效率。
+启动时报错，经过查询原来是jar包版本的问题。
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@2a139a55]
+将PageHelper升级为1.2.5版本，即可解决。（原来版本是1.1.2）
