@@ -22,3 +22,5 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 通用 Mapper 是一个可以实现任意 MyBatis 通用方法的框架，项目提供了常规的增删改查操作以及Example 相关的单表操作。
 通用 Mapper 是为了解决 MyBatis 使用中 90% 的基本操作，使用它可以很方便的进行开发，可以节省开发人员大量的时间。
 此时，将主键类型由Integer类型改为varchar类型，主键生成策略由框架来实现。实现发号器。
+9、集成generator自动生成model，xml，dao功能
+10、
